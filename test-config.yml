@@ -3,6 +3,7 @@ spring:
     active: test
    
 ---
+
 server:
  port: 8001
   
@@ -12,9 +13,10 @@ spring:
    name: cloud-dev-1.0
  
 ---
+
 spring:
   profiles: test
-  application: 
+   application: 
     name: cloud-dev-test-1.0
  
  
