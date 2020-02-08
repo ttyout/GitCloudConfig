@@ -1,13 +1,22 @@
-server:
-  port: 8080
 spring:
-  application:
-    name: testConfigServer
+  profiles:
+    active: dev
 
-  cloud:
-    config:
-      server:
-        git: #仓库地址
-          uri: https://github.com/xqG/GitCloudConfig.git
+---
+#开发环境配置
+spring:
+  profiles: dev
+
+server:
+  port: 1000
+
+
+---
+#测试环境配置
+spring:
+  profiles: stg
+
+server:
+  port: 1001
 
  
