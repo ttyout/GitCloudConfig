@@ -3,6 +3,7 @@ logging:
     console: "%d{HH:mm:ss.SSS} %clr(%5p) %clr(-){faint} %clr(%-80.80logger{79}){cyan} %clr(:) %m%n"
 
 
+
 server:
   port: 3000
 eureka:
